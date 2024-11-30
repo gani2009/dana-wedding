@@ -40,6 +40,10 @@
 <!-- Preloader Start -->
 
 <main>
+    <audio id="myAudio" loop>
+        <source src="assets/audio.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playMusic()" id="musicButton" class="btn" style="position: absolute; left: calc(50% - 90px); top: 80%">Әуенді ойнау</button>
     <!--? Slider Area Start-->
     <div class="slider-area">
         <div class="slider-active">
@@ -89,21 +93,18 @@
                 салтанатты ақ дастарханымыздың <br>
                 қадірлі қонағы болуға шақырамыз!
             </h3>
+            <div>
+                <div>
+                    <a href="#formContainer"><button class="btn">Тойға келуді растау</button></a>
+                </div>
+            </div>
         </div>
     </section>
     <!--? Services Start -->
-    <section class="pricing-card-area section-padding-b section-bg" data-background="assets/img/gallery/section_bg1.png">
+    <section class="pricing-card-area section-bg" data-background="assets/img/gallery/section_bg1.png">
         <div class="container">
                 <!-- Section Tittle -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-8">
-                        <div class="section-tittle text-center mb-10">
-                        <h2>Той Жоспары</h2>
-                        <img src="assets/img/gallery/tittle_img.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="section-tittle tittle-form text-center mb-30">
+            <div class="section-tittle tittle-form text-center mb-30 mt-30">
                 <h3>Той 19:00 Басталады</h3>
             </div>
             <table class="table table-bordered calendar mx-auto">
@@ -141,6 +142,14 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-10">
+                        <h2>Той Жоспары</h2>
+                        <img src="assets/img/gallery/tittle_img.png" alt="">
+                    </div>
+                </div>
+            </div>
             <div class="row align-items-end">
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="single-card text-center mb-30">
@@ -177,51 +186,8 @@
             </div>
         </div>
     </section>
-    <!-- Services Card End -->
-    <!--? Count Down Start -->
-    <div class="count-down-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12">
-                    <div class="count-down-wrapper" data-background="assets/img/gallery/section_bg2.png">
-                        <div class="row justify-content-between">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span id="days" class="counter">23</span>
-                                    <p>күн</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter active text-center">
-                                    <span id="hours" class="counter">15</span>
-                                    <p>сағат</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span id="minutes" class="counter">46</span>
-                                    <p>минут</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span id="seconds" class="counter">20</span>
-                                    <p>секунд</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Count Down End -->
     <!--? Contact form Start -->
-    <div class="contact-form section-padding30 fix mb-30">
+    <div class="contact-form fix" id="formContainer">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6">
@@ -269,7 +235,7 @@
                                 </div>
                                 <div class="col-lg-12 mb-50">
                                     <div class="submit-info">
-                                        <button class="btn" type="submit">Confirm now</button>
+                                        <button class="btn" type="submit">Жіберу</button>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +255,7 @@
         </div>
     </div>
     <!-- Contact form End -->
-    <section class="feature-area">
+    <section class="feature-area section-padding-b">
         <div class="container text-center">
             <h3 class="lobster-regular fa-2x">
                 Той иелері:<br>
@@ -298,6 +264,48 @@
             </h3>
         </div>
     </section>
+    <!--? Count Down Start -->
+    <div class="count-down-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="count-down-wrapper" data-background="assets/img/gallery/section_bg2.png">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span id="days" class="counter">23</span>
+                                    <p>күн</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter active text-center">
+                                    <span id="hours" class="counter">15</span>
+                                    <p>сағат</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span id="minutes" class="counter">46</span>
+                                    <p>минут</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span id="seconds" class="counter">20</span>
+                                    <p>секунд</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Count Down End -->
 </main>
 <footer>
     <!-- Footer Start-->
@@ -363,6 +371,17 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        let isPlaying = false;
+        function playMusic() {
+            if (isPlaying) {
+                document.getElementById("myAudio").pause();
+                document.getElementById("musicButton").innerHTML = 'Әуенді ойнау';
+            } else {
+                document.getElementById("myAudio").play();
+                document.getElementById("musicButton").innerHTML = 'Әуенді тоқтату';
+            }
+            isPlaying = !isPlaying;
+        }
         function updateCountdown() {
             // Set the target date and time
             const targetDate = new Date('December 23, 2024 19:00:00').getTime();
