@@ -43,7 +43,7 @@
     <audio id="myAudio" loop>
         <source src="assets/audio.mp3" type="audio/mpeg">
     </audio>
-    <button onclick="playMusic()" id="musicButton" class="btn" style="position: absolute; left: calc(50% - 90px); top: 260px">Әуенді ойнау</button>
+    <button onclick="playMusic()" id="musicButton" class="btn" style="position: absolute; left: calc(50% - 90px); top: 280px">Әуенді ойнау</button>
     <!--? Slider Area Start-->
     <div class="slider-area">
         <div class="slider-active">
@@ -88,14 +88,14 @@
             </h3><br><br>
             <h3 class="lobster-regular" style="font-size: 3vmax">
                 Сіздерді қызымыз,<br>
-                <span style="color: red">Дананың</span><br>
+                <span style="color: red" class="lobster-regular">ДАНАНЫҢ</span><br>
                 ұзату тойына арналған<br>
                 салтанатты ақ дастарханымыздың <br>
                 қадірлі қонағы болуға шақырамыз!
             </h3>
             <div>
                 <div>
-                    <a href="#formContainer"><button class="btn">Тойға келуді растау</button></a>
+                    <a href="#formContainer"><button class="btn">Тойға келесіз ба?</button></a>
                 </div>
             </div>
         </div>
@@ -106,46 +106,12 @@
                 <!-- Section Tittle -->
             <div class="section-tittle tittle-form text-center mb-30 mt-30">
                 <h3>Той 19:00 Басталады</h3>
+                <h3>23-Желтоқсан, 2024</h3>
             </div>
-            <table class="table table-bordered calendar mx-auto">
-                <thead>
-                <tr>
-                    <th>ЖС</th>
-                    <th>ДС</th>
-                    <th>СС</th>
-                    <th>СР</th>
-                    <th>БС</th>
-                    <th>Жм</th>
-                    <th>Сб</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
-                </tr>
-                <tr>
-                    <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
-                </tr>
-                <tr>
-                    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td class="highlight">
-                        <div class="heart-bg">&bull;</div>
-                        <div class="number">23</div>
-                    </td>
-                    <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
-                </tr>
-                <tr>
-                    <td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td>
-                </tr>
-                </tbody>
-            </table>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-10">
-                        <h2>Той Жоспары</h2>
+                        <h2>Той<br>Жоспары</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
                     </div>
                 </div>
@@ -159,10 +125,9 @@
                         </div>
                         <div class="card-bottom">
                             <ul>
-                                <li><i class="fas fa-calendar-alt"></i>Желтоқсан 23, 2024</li>
+                                <li><i class="fas fa-calendar-alt"></i>23 Желтоқсан, 2024</li>
                                 <li><i class="far fa-clock"></i>18:30-19:00</li>
                                 <li><i class="fas fa-map-marker-alt"></i>Алтын Жұлдыз мейрамханасы: VIP залы</li>
-                                <li>Шымкент қаласы, 234 Темірлан тас жолы</li>
                             </ul>
                         </div>
                     </div>
@@ -175,10 +140,10 @@
                         </div>
                         <div class="card-bottom">
                             <ul>
-                                <li><i class="fas fa-calendar-alt"></i>Желтоқсан 23, 2024</li>
+                                <li><i class="fas fa-calendar-alt"></i>23 Желтоқсан, 2024</li>
                                 <li><i class="far fa-clock"></i>19:00</li>
                                 <li><i class="fas fa-map-marker-alt"></i>Алтын Жұлдыз мейрамханасы: VIP залы</li>
-                                <li>Шымкент қаласы, 234 Темірлан тас жолы</li>
+                                <li>Шымкент қаласы, Темірлан тас жолы 234</li>
                             </ul>
                         </div>
                     </div>
@@ -187,7 +152,7 @@
         </div>
     </section>
     <!--? Contact form Start -->
-    <div class="contact-form fix" id="formContainer">
+    <div class="contact-form fix" id="formContainer" style="margin-top: 50px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6">
@@ -204,33 +169,29 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="form-box mb-30">
-                                        <input type="text" name="name" id="name" placeholder="АТЫ-ЖӨНІҢІЗ">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 mb-20">
                                     <div class="section-tittle tittle-form text-left mb-3">
                                         <h4>Тойға келесіз бе?</h4>
                                     </div>
                                     <div class="mb-20">
                                         <div class="form-check">
-                                            <input style="height: 20px; width: 20%" type="radio" name="guests" id="yesGoing" value="yes" checked>
-                                            <label for="yesGoing">Ия, келемін</label><br>
+                                            <input style="height: 20px; width: 20%" type="radio" name="going" id="yesGoing" value="yes" checked>
+                                            <label for="yesGoing">Келемін</label><br>
                                         </div>
                                         <div class="form-check">
-                                            <input style="height: 20px; width: 20%" type="radio" name="guests" id="yesWith" value="yesSpouse">
-                                            <label for="yesWith">Ия, жұбайыммен келемін</label>
+                                            <input style="height: 20px; width: 20%" type="radio" name="going" id="notGoing" value="notGoing">
+                                            <label for="notGoing">Келе алмаймын</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input style="height: 20px; width: 20%" type="radio" name="guests" id="notGoing" value="notGoing">
-                                            <label for="notGoing">Өкінішке орай келе алмаймын</label>
-                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-box mb-30">
+                                        <input type="text" name="name" id="name" placeholder="АТЫ-ЖӨНІҢІЗ">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 mb-20">
                                     <div class="form-box subject-icon mb-20">
-                                        <label for="spouseYes?" style="font-size: 19px">Жұбайыңызбен келсеңіз, есімін енгізіңіз:</label>
-                                        <input type="text" name="spouse" id="spouseYes?" placeholder="АТЫ-ЖӨНІ">
+                                        <label for="relationshipToDana" style="font-size: 19px">Данаға кім боласыз:</label>
+                                        <textarea type="text" name="relationshipToDana" id="relationshipToDana"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 mb-50">
@@ -307,29 +268,6 @@
     </div>
     <!-- Count Down End -->
 </main>
-<footer>
-    <!-- Footer Start-->
-    <div class="footer-main" data-background="assets/img/gallery/section_bg4.png">
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer End-->
-</footer>
 
     <!-- JS here -->
 
